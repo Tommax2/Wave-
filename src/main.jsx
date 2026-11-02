@@ -17,5 +17,6 @@ import './styles/about.css'
 import './styles/footer.css'
 import './styles/contribute.css'
 import './styles/conversations.css'
+import './styles/responsive-fixes.css'
 
 createRoot(document.getElementById('root')).render(<App />)
