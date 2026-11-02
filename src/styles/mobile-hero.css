@@ -1,0 +1,34 @@
+.featured-heading{gap:24px;margin-bottom:32px}
+.featured-heading .featured-eyebrow:before{display:none;content:none}
+.featured-heading h2{margin-top:10px}
+@media(max-width:700px){
+  .featured-heading{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .featured-heading>div{display:flex;flex-direction:column;align-items:center}
+  .featured-heading .featured-all{display:block;width:max-content;margin:18px auto 0}
+  .home-hero,.hero-inner{min-height:min(100svh,820px)}
+  .home-hero{isolation:isolate}
+  .hero-photo{background-image:linear-gradient(180deg,rgba(4,21,38,.66) 0%,rgba(4,21,38,.76) 48%,rgba(4,21,38,.94) 100%),url('/assets/community.jpg');background-position:62% center;transform:none}
+  .hero-shape{right:-55%;bottom:-16%;width:110vw;opacity:.6;box-shadow:0 0 0 42px rgba(233,130,56,.07),0 0 0 84px rgba(255,255,255,.025)}
+  .hero-inner{justify-content:flex-start;padding-top:142px;padding-bottom:28px}
+  .hero-copy{display:flex;width:100%;max-width:520px;flex-direction:column;align-items:center;text-align:center}
+  .hero-copy:before{max-width:300px;margin-bottom:20px;font-size:8px;line-height:1.7;letter-spacing:.16em}
+  .hero-copy h1{width:100%;margin-bottom:23px;font-size:clamp(43px,13.2vw,61px);line-height:.94;letter-spacing:-.045em}
+  .hero-copy>p{max-width:390px;color:rgba(255,255,255,.8);font-size:15px;line-height:1.65}
+  .hero-copy .actions{display:grid;width:100%;max-width:360px;grid-template-columns:1fr 1fr;gap:10px;margin-top:27px}
+  .hero-copy .actions a{width:100%;padding:13px 14px;text-align:center}
+  .hero-note{width:100%;justify-content:center;gap:14px;margin-top:clamp(34px,6vh,60px);padding-top:0;font-size:7px;letter-spacing:.14em}
+}
+@media(max-width:390px){
+  .hero-inner{padding-top:124px}
+  .hero-copy h1{font-size:41px}
+  .hero-copy .actions{grid-template-columns:1fr;max-width:250px}
+  .hero-note{gap:10px;font-size:6px}
+}
+@media(max-height:700px) and (max-width:700px){
+  .hero-inner{padding-top:112px}
+  .hero-copy:before{margin-bottom:13px}
+  .hero-copy h1{margin-bottom:17px;font-size:clamp(39px,11.5vw,50px)}
+  .hero-copy>p{font-size:13px}
+  .hero-copy .actions{margin-top:19px}
+  .hero-note{padding-top:18px}
+}
