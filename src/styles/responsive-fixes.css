@@ -3,3 +3,110 @@ html,body,#root{max-width:100%;overflow-x:clip}
 @media(max-width:800px){.header-inner{padding-inline:22px}.mobile-sidebar{width:min(88vw,390px)}.sidebar-intro{margin-top:32px}.about-mission{grid-template-columns:1fr;gap:35px}.about-mission-heading{padding-top:0}.about-pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-values{grid-template-columns:1fr}.conversations-hero,.contribute-intro{grid-template-columns:1fr}.story-form-shell{grid-template-columns:1fr}.story-form-aside{min-height:auto}.footer-main{grid-template-columns:1fr auto}.footer-nav{grid-column:1/-1}.story-cover{height:min(68vw,580px)}}
 @media(max-width:600px){.page-shell{padding-inline:18px}.page-main{padding-top:100px}.header-inner{padding:10px 16px}.brand{gap:9px}.brand-mark{width:39px}.brand-mark img{width:64px;transform:translate(-12px,-12px)}.brand-name{font-size:17px}.header-actions{gap:7px}.theme-toggle,.menu-button{width:40px;height:40px}.header-actions+.menu-button{margin-left:2px}.mobile-sidebar{padding:18px 20px 26px}.about-hero h1,.conversations-hero h1,.contribute-intro h1{overflow-wrap:anywhere}.about-mission{margin-inline:0}.about-pillar-grid{grid-template-columns:1fr}.about-belief{margin-inline:0}.about-values{margin-inline:0}.about-cta,.conversations-invite{margin-inline:0}.conversation-card-grid{grid-template-columns:1fr}.conversation-card-grid article{min-height:300px}.story-form-shell{margin-inline:0}.story-form{gap:20px}.story-form input,.story-form select{font-size:16px}.story-form textarea{font-size:16px}.story-form-aside a{overflow-wrap:anywhere}.story-heading-row{margin-top:32px}.story-hero h1{overflow-wrap:anywhere}.story-deck>p{font-size:19px}.story-cover{height:55vh;min-height:350px}.story-reading-layout{padding-inline:18px}.story-close>a{width:100%;justify-content:space-between}.footer-main{grid-template-columns:1fr}.footer-socials{grid-column:1;grid-row:auto}.footer-nav{grid-column:1;gap:12px 18px}.footer-bottom{align-items:flex-start;flex-direction:column}}
 @media(max-width:380px){.brand-name{display:none}.about-hero h1,.conversations-hero h1,.contribute-intro h1{font-size:48px}.about-mission,.about-values,.about-cta,.conversations-invite{padding-inline:20px}.story-form-aside,.story-form{padding-inline:18px}.form-submit button{width:100%}.footer-nav{display:grid;grid-template-columns:1fr 1fr}}
+
+/* Full mobile layout reset */
+@media(max-width:767px){
+  .page-shell{width:100%;padding-inline:18px}
+  .home-hero,.hero-inner{min-height:100svh}
+  .hero-inner{padding:125px 18px 40px}
+  .hero-copy{width:100%;max-width:none}
+  .hero-copy h1{font-size:clamp(45px,13vw,64px);line-height:.94}
+  .hero-copy>p{max-width:34rem;font-size:15px}
+  .actions{width:100%;max-width:none}
+  .actions a{width:100%}
+  .wave-overview{grid-template-columns:1fr;width:calc(100% - 36px);margin-inline:auto}
+  .wave-overview>div{padding:20px;border-right:0;border-bottom:1px solid var(--line)}
+  .wave-overview>div:last-child{border-bottom:0}
+  .wave-pulse{grid-template-columns:1fr 1fr;padding:50px 18px}
+  .featured,.latest-section,.pillar-discovery,.featured-voices,.home-manifesto,.publish-invite{padding:64px 18px}
+  .featured-heading,.section-heading{display:flex;align-items:flex-start;flex-direction:column;gap:18px}
+  .topic-grid,.latest-grid,.voices-grid{grid-template-columns:1fr}
+  .topic-card,.topic-card-lead{grid-column:auto}
+  .topic-art{height:240px}
+  .story-lead{grid-row:auto}
+  .story-lead .story-image{height:280px}
+  .story-brief{display:block;min-height:0}
+  .story-brief .story-image{height:230px}
+  .latest-grid .story-card:last-child{display:block}
+  .voices-grid article,.voices-grid article:last-child{grid-column:auto;min-height:0}
+  .voices-grid img{height:250px}
+  .pillar-intro,.home-manifesto,.publish-invite.publish-redesign{grid-template-columns:1fr}
+  .pillar-track{grid-template-columns:1fr 1fr}
+  .manifesto-aside{min-height:190px}
+  .publish-orbit{width:min(100%,300px);min-height:300px;margin-inline:auto}
+  .cta{align-items:flex-start;flex-direction:column;gap:18px}
+  .cta a{width:100%;text-align:center}
+
+  .about-hero{min-height:390px;padding:35px 0 60px}
+  .about-hero h1{font-size:clamp(46px,14vw,68px);line-height:.92}
+  .about-hero-copy>p{padding-left:14px}
+  .about-mission{display:block;margin:45px 0;padding:34px 22px}
+  .about-mission-copy{margin-top:34px}
+  .about-mission-copy h2{font-size:clamp(38px,11vw,52px)}
+  .about-verbs{grid-template-columns:1fr 1fr}
+  .about-pillars{margin-inline:-18px;padding:70px 18px}
+  .about-pillars>header{display:block;margin-bottom:38px}
+  .about-pillars>header h2{margin-top:28px;font-size:clamp(37px,11vw,50px)}
+  .about-pillar-grid{display:grid;grid-template-columns:1fr;gap:12px}
+  .about-pillar-grid article,.about-pillar-grid article:first-child{min-height:280px;padding:24px}
+  .about-belief{display:block;margin-bottom:70px;padding:30px 22px}
+  .about-belief-mark{margin-bottom:28px}
+  .about-belief h2{font-size:clamp(37px,11vw,49px)}
+  .about-values{display:block;margin-bottom:70px;padding:36px 22px}
+  .about-values-list{grid-template-columns:1fr;margin-top:38px}
+  .about-cta{display:block;padding:34px 22px}
+  .about-cta h2{font-size:clamp(38px,11vw,50px)}
+  .about-cta>a{width:100%;margin-top:34px}
+
+  .conversations-hero{display:block;padding:35px 0 60px}
+  .conversations-hero h1{font-size:clamp(46px,14vw,68px)}
+  .conversations-hero-note{margin-top:40px}
+  .conversation-categories{padding:70px 0}
+  .conversation-categories>header{display:block;margin-bottom:38px}
+  .conversation-categories>header>p{margin-top:20px}
+  .conversation-card-grid{grid-template-columns:1fr}
+  .conversation-card-grid article{min-height:280px;padding:24px}
+  .conversations-invite{display:block;padding:32px 22px}
+  .conversations-invite h2{font-size:clamp(36px,10vw,48px)}
+  .conversations-invite>a{margin-top:30px}
+
+  .contribute-intro{display:block;padding:35px 0 60px}
+  .contribute-intro h1{font-size:clamp(46px,14vw,68px)}
+  .contribute-intro>p{margin-top:35px;padding-left:14px}
+  .story-form-shell{display:block}
+  .story-form-aside,.story-form{padding:28px 20px}
+  .form-row{grid-template-columns:1fr}
+
+  .story-page{padding-top:82px}
+  .story-hero{padding:30px 18px 42px}
+  .story-heading-row{display:block;margin-top:35px}
+  .story-hero h1{font-size:clamp(43px,13vw,64px)}
+  .story-share{margin-top:24px}
+  .story-deck{display:block;margin-top:28px;padding-top:24px}
+  .story-meta{margin-top:24px}
+  .story-cover{width:calc(100% - 24px);height:auto;aspect-ratio:4/5;min-height:0}
+  .story-reading-layout{display:block;padding:50px 18px 0}
+  .story-body{width:100%}
+  .story-body>p{font-size:18px;line-height:1.78}
+  .story-close{padding:30px 20px}
+  .story-close h2{font-size:clamp(34px,10vw,45px)}
+
+  .site-footer{margin-top:60px}
+  .footer-main{display:block;padding:30px 0}
+  .footer-identity{display:block}
+  .footer-identity p{margin-top:8px}
+  .footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+  .footer-socials{margin-top:24px}
+  .footer-bottom{display:flex;align-items:flex-start;flex-direction:column;gap:9px}
+}
+
+@media(max-width:420px){
+  .pillar-track{grid-template-columns:1fr}
+  .wave-pulse{grid-template-columns:1fr 1fr;gap:20px 8px}
+  .wave-pulse strong{font-size:38px}
+  .header-actions>.theme-toggle{width:38px;height:38px}
+  .menu-button{width:38px;height:38px}
+  .about-verbs{grid-template-columns:1fr}
+  .about-verbs span+span{border-left:0;border-top:1px solid rgba(94,228,209,.16)}
+  .story-form input,.story-form select,.story-form textarea{max-width:100%}
+}
