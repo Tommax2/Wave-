@@ -7,6 +7,7 @@ const defaults = {
   stories: ['Stories | WAVE', 'Read personal stories, thoughtful perspectives and ideas shared by people across the WAVE community.'],
   contribute: ['Share Your Story | WAVE', 'Share your experience, idea or perspective with WAVE and help begin a meaningful conversation.'],
 }
+const SITE_ORIGIN = 'https://www.waveng.org'
 
 const setMeta = (selector, attributes) => {
   let element = document.head.querySelector(selector)
@@ -18,8 +19,8 @@ export default function Seo({ route, story }) {
   useEffect(() => {
     const isStory = Boolean(story)
     const [title, description] = isStory ? [`${story.title} | WAVE`, story.excerpt] : (defaults[route] || defaults.home)
-    const url = `${window.location.origin}${window.location.pathname}`
-    const image = story?.image ? new URL(story.image, window.location.origin).href : new URL('/assets/community.jpg', window.location.origin).href
+    const url = `${SITE_ORIGIN}${window.location.pathname}`
+    const image = story?.image ? new URL(story.image, SITE_ORIGIN).href : new URL('/assets/community.jpg', SITE_ORIGIN).href
     document.title = title
     document.documentElement.lang = 'en'
     setMeta('meta[name="description"]', { name: 'description', content: description })
@@ -32,11 +33,11 @@ export default function Seo({ route, story }) {
     const schema = isStory ? {
       '@context': 'https://schema.org', '@type': 'Article', headline: story.title, description: story.excerpt,
       image: story.image ? [image] : undefined, author: { '@type': 'Person', name: story.author },
-      publisher: { '@type': 'Organization', name: 'WAVE', logo: { '@type': 'ImageObject', url: new URL('/assets/wave-logo.jpeg', window.location.origin).href } },
+      publisher: { '@type': 'Organization', name: 'WAVE', logo: { '@type': 'ImageObject', url: new URL('/assets/wave-logo.jpeg', SITE_ORIGIN).href } },
       mainEntityOfPage: url, datePublished: story.publishedAt || story.createdAt || undefined,
     } : {
-      '@context': 'https://schema.org', '@type': 'WebSite', name: 'WAVE', url: window.location.origin,
-      description: defaults.home[1], publisher: { '@type': 'Organization', name: 'WAVE', logo: new URL('/assets/wave-logo.jpeg', window.location.origin).href },
+      '@context': 'https://schema.org', '@type': 'WebSite', name: 'WAVE', url: SITE_ORIGIN,
+      description: defaults.home[1], publisher: { '@type': 'Organization', name: 'WAVE', logo: new URL('/assets/wave-logo.jpeg', SITE_ORIGIN).href },
     }
     let script = document.head.querySelector('#wave-structured-data')
     if (!script) { script = document.createElement('script'); script.type = 'application/ld+json'; script.id = 'wave-structured-data'; document.head.appendChild(script) }

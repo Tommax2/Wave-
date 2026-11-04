@@ -6,5 +6,8 @@
   "display": "standalone",
   "background_color": "#11091b",
   "theme_color": "#11091b",
-  "icons": [{ "src": "/assets/wave-favicon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }]
+  "icons": [
+    { "src": "/assets/favicon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/wave-favicon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "maskable" }
+  ]
 }
