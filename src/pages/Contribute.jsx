@@ -28,7 +28,7 @@ export default function Contribute() {
       <div className="connect-copy">
         <p>We’d love to hear from you. Whether you have a story to share, a question to ask, a collaboration in mind, or simply want to connect, our space is open to you.</p>
         <p>Reach out to us through any of our platforms below. Your voice matters, and we’d love to hear from you.</p>
-        <div className="connect-links"><a href={`mailto:${recipient}`}>Email us</a><a href="https://www.instagram.com/thewave_ng/" target="_blank" rel="noreferrer">Instagram</a><a href="https://x.com/Thewave_ng" target="_blank" rel="noreferrer">X</a><a href="https://www.linkedin.com/company/thewave-ng/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+        <div className="connect-links"><a href={`mailto:${recipient}`}>{recipient}</a><a href="https://www.facebook.com/profile.php?id=61594464190589" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.instagram.com/thewave_ng/" target="_blank" rel="noreferrer">Instagram</a><a href="https://x.com/Thewave_ng" target="_blank" rel="noreferrer">X</a><a href="https://www.linkedin.com/company/thewave-ng/" target="_blank" rel="noreferrer">LinkedIn</a></div>
         <strong>Your Voice, Your Story, Your Space</strong>
       </div>
     </section>
