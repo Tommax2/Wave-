@@ -18,6 +18,24 @@ export const conversations = [
   ['Youth & Future', 'The ideas and voices shaping what comes next.']
 ]
 export const values = [
-  ['Thoughtful', 'We take ideas seriously.'], ['Bold', 'We ask the harder questions.'],
-  ['Human', 'Real stories, real people.'], ['Curious', 'Always learning, always exploring.']
+  [
+    'Words that matter',
+    'We choose our words with honesty and care.',
+    'We edit for clarity and truth, and we avoid language that shames or stereotypes.'
+  ],
+  [
+    'Awareness that leads to action',
+    'We help people understand the issues shaping young lives, and what they can do about them.',
+    "Every piece we publish points to a next step, whether that's a question to reflect on, a resource, or a conversation to start."
+  ],
+  [
+    'Voices, all of them',
+    'We make room for different backgrounds, opinions, and experiences.',
+    'We invite contributors beyond the usual circles, and we listen before we respond.'
+  ],
+  [
+    'Experiences, shared with courage',
+    'Lived stories are powerful, and they deserve protection.',
+    'Storytellers choose what they share and how. We get consent, respect privacy, and never exploit pain for attention.'
+  ]
 ]

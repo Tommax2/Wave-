@@ -4,7 +4,7 @@ import { conversations } from '../data/content'
 const icons = [Users, BriefcaseBusiness, Landmark, Megaphone, GraduationCap, Sparkles]
 const labels = ['Human stories', 'The working world', 'Life together', 'Ideas that matter', 'Learning & growth', 'What comes next']
 
-export default function Conversations() {
+export default function Conversations({ stories = [] }) {
   return <main className="page-shell page-main conversations-page">
     <section className="conversations-hero">
       <div className="conversations-hero-copy"><span className="conversations-label">Explore conversations</span><h1>Every part of life<br /><em>is worth discussing.</em></h1></div>
@@ -21,6 +21,11 @@ export default function Conversations() {
           <a href="#/contribute" aria-label={`Share a story about ${title}`}>Add your perspective <ArrowUpRight size={16} /></a>
         </article>
       })}</div>
+    </section>
+
+    <section className="conversation-stories">
+      <header><div><span>From WAVE</span><h2>Latest stories</h2></div><p>Real experiences, considered perspectives and ideas worth sitting with.</p></header>
+      <div className="conversation-story-grid">{stories.map(story => <a href={`#/story/${story.id}`} key={story.id}><div className="conversation-story-image">{story.image ? <img src={story.image} alt="" /> : <span>WAVE</span>}<small>{story.category}</small></div><div className="conversation-story-copy"><span>{story.date} · {story.author}</span><h3>{story.title}</h3><p>{story.excerpt}</p><strong>Read story <ArrowUpRight size={15} /></strong></div></a>)}</div>
     </section>
 
     <section className="conversations-invite"><div><span>Do you see life differently?</span><h2>Your perspective could begin the next conversation.</h2></div><a href="#/contribute">Share your story <ArrowUpRight size={18} /></a></section>

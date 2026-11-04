@@ -2,7 +2,9 @@
 .menu-button{border-color:rgba(82,226,205,.5)!important;background:rgba(13,8,23,.9)!important;color:#67ead6!important;box-shadow:0 7px 22px rgba(0,0,0,.25)}
 .menu-button svg{display:block;stroke:currentColor!important;stroke-width:2.2}
 .site-header.is-solid .menu-button{background:#f8f5ff!important;color:#171023!important}
-.home-hero .hero-copy h1{font-size:clamp(54px,6.5vw,92px);line-height:1.04;letter-spacing:-.045em}
+.home-hero .hero-copy{transform:translateY(28px)}
+.home-hero .hero-copy h1{font-size:clamp(58px,7vw,102px);line-height:1.02;letter-spacing:-.045em}
+.home-hero .hero-copy>p{font-size:18px}
 .home-hero .hero-copy h1 span{padding-bottom:.03em}
 .home-hero .hero-copy h1 .accent-line{margin-top:.08em;padding-bottom:.08em;line-height:1.08}
 /* Distinct visual layers for each homepage scene. */
@@ -33,9 +35,9 @@
 .home-manifesto{margin-top:54px;margin-bottom:54px}
 @media(max-width:800px){
   .hero-inner{align-items:center!important;text-align:center!important}
-  .hero-copy{align-items:center!important;margin-inline:auto;text-align:center!important}
+  .hero-copy{align-items:center!important;margin-inline:auto;text-align:center!important;transform:translateY(18px)}
   .hero-copy:before{margin-inline:auto;text-align:center}
-  .hero-copy h1{font-size:clamp(42px,8.5vw,60px);line-height:1.05}
+  .hero-copy h1{font-size:clamp(45px,9vw,64px);line-height:1.03}
   .hero-copy>p{max-width:520px}
   .hero-copy .actions{margin-inline:auto}
   .hero-note{justify-content:center!important;text-align:center}
@@ -52,10 +54,10 @@
   .nav-backdrop{background:rgba(3,2,8,.68);backdrop-filter:blur(6px)}
   .home-hero,.hero-inner{min-height:auto!important}
   .hero-inner{align-items:center!important;padding-top:112px;padding-bottom:38px;text-align:center!important}
-  .hero-copy{align-items:center!important;text-align:center!important}
+  .hero-copy{align-items:center!important;text-align:center!important;transform:translateY(10px)}
   .hero-copy:before{margin-inline:auto;text-align:center}
-  .hero-copy h1{font-size:clamp(36px,10vw,46px);line-height:1.06}
-  .hero-copy>p{max-width:420px;font-size:13px}
+  .hero-copy h1{font-size:clamp(39px,10.8vw,50px);line-height:1.04}
+  .hero-copy>p{max-width:420px;font-size:14px}
   .hero-note{justify-content:center!important;margin-top:30px!important;padding-top:0!important;text-align:center}
   .wave-pulse strong{font-size:37px}.wave-pulse span{max-width:120px;font-size:8px}
   .featured-heading h2,.section-heading h2,.pillar-intro h2,.voices-heading h2{font-size:clamp(32px,8.8vw,43px)}

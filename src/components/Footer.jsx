@@ -11,7 +11,7 @@ function SocialIcon({ path }) {
 export default function Footer() {
   return <footer className="site-footer">
     <div className="footer-main">
-      <div className="footer-identity"><a className="footer-brand" href="#/" aria-label="WAVE home"><span className="footer-logo"><img src="/assets/wave-logo.jpeg" alt="" /></span><span>WAVE</span></a><p>Stories that connect us.</p></div>
+      <div className="footer-identity"><a className="footer-brand" href="#/" aria-label="WAVE home"><span className="footer-logo"><img src="/assets/wave-logo.jpeg" alt="" /></span><span>WAVE</span></a><p>Your Voice, Your Story, Your Space</p></div>
       <nav className="footer-nav" aria-label="Footer navigation"><a href="#/">Home</a><a href="#/about">About</a><a href="#/conversations">Conversations</a><a href="#/contribute">Share a story</a></nav>
       <div className="footer-socials">{socialLinks.map(({ label, href, path }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={`WAVE on ${label}`}><SocialIcon path={path} /></a>)}</div>
     </div>

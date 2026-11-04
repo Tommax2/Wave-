@@ -23,5 +23,14 @@ export default function Contribute() {
         <div className="form-submit"><p>Submitting opens your email app with your story ready to send.</p><button type="submit">Prepare email <Send size={17} /></button></div>
       </form>
     </section>
+    <section className="connect-section">
+      <div className="connect-heading"><span className="contribute-label">Let’s connect</span><h2>Let’s Connect! <span aria-hidden="true">🌊</span></h2></div>
+      <div className="connect-copy">
+        <p>We’d love to hear from you. Whether you have a story to share, a question to ask, a collaboration in mind, or simply want to connect, our space is open to you.</p>
+        <p>Reach out to us through any of our platforms below. Your voice matters, and we’d love to hear from you.</p>
+        <div className="connect-links"><a href={`mailto:${recipient}`}>Email us</a><a href="https://www.instagram.com/thewave_ng/" target="_blank" rel="noreferrer">Instagram</a><a href="https://x.com/Thewave_ng" target="_blank" rel="noreferrer">X</a><a href="https://www.linkedin.com/company/thewave-ng/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+        <strong>Your Voice, Your Story, Your Space</strong>
+      </div>
+    </section>
   </main>
 }

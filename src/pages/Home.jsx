@@ -3,8 +3,8 @@ import { starterPosts } from '../data/posts'
 
 const topicImages = ['/assets/wave-community-conversation.png', '/assets/wave-writer-perspective.png', '/assets/wave-workshop-future.png']
 
-export default function Home() {
-  const posts = starterPosts
+export default function Home({ stories = [] }) {
+  const posts = stories.length ? stories : starterPosts
   return <main className="home-page">
     <section className="home-hero">
       <div className="hero-photo" aria-hidden="true"></div><div className="hero-shape" aria-hidden="true"></div>
@@ -50,14 +50,14 @@ export default function Home() {
     <section className="featured-voices page-shell">
       <div className="voices-heading"><span className="eyebrow">VOICES AT THE CENTRE</span><h2>Every perspective adds something.</h2><p>WAVE is shaped by people willing to share what they have lived, learned and noticed.</p></div>
       <div className="voices-grid">
-        <article><img src="/assets/portrait.jpg" alt="A community storyteller" /><div><span>PERSONAL STORIES</span><h3>The courage to speak honestly</h3><p>First-person experiences that help others feel recognised.</p></div></article>
-        <article><img src="/assets/youth.jpg" alt="Young people in conversation" /><div><span>THE NEXT GENERATION</span><h3>Ideas shaping what comes next</h3><p>Young voices asking better questions about the future.</p></div></article>
-        <article><img src="/assets/work.jpg" alt="People learning and working together" /><div><span>WORK AND GROWTH</span><h3>Lessons from the way we work</h3><p>Honest conversations about learning, leadership and opportunity.</p></div></article>
+        <article><img src="/assets/voice-personal-story.png" alt="A community storyteller reflecting by a window" /><div><span>PERSONAL STORIES</span><h3>The courage to speak honestly</h3><p>First-person experiences that help others feel recognised.</p></div></article>
+        <article><img src="/assets/voice-next-generation.png" alt="Young people sharing ideas around a table" /><div><span>THE NEXT GENERATION</span><h3>Ideas shaping what comes next</h3><p>Young voices asking better questions about the future.</p></div></article>
+        <article><img src="/assets/voice-work-growth.png" alt="Professionals collaborating in a creative workspace" /><div><span>WORK AND GROWTH</span><h3>Lessons from the way we work</h3><p>Honest conversations about learning, leadership and opportunity.</p></div></article>
       </div>
       <a className="voices-action primary" href="#/contribute">Add your voice</a>
     </section>
     <section className="latest-section page-shell">
-      <div className="section-heading"><div><span className="eyebrow">LATEST FROM WAVE</span><h2>Fresh stories and ideas</h2></div><a href="#/conversations">Browse all stories</a></div>
+      <div className="section-heading"><div><span className="eyebrow">LATEST FROM WAVE</span><h2>Fresh stories and ideas</h2></div><a href="#/stories">Browse all stories</a></div>
       <div className="latest-grid">{posts.slice(0, 3).map((post, index) => <a href={`#/story/${post.id}`} className={`story-card ${index === 0 ? 'story-lead' : 'story-brief'}`} key={post.id} aria-label={`Read ${post.title}`}>
         <div className="story-image">{post.image ? <img src={post.image} alt="" /> : <div className="story-placeholder">WAVE</div>}{index === 0 && <span>{post.category}</span>}</div>
         <div className="story-copy">{index > 0 && <span className="story-category">{post.category}</span>}<small>{post.date} · {post.author}</small><h3>{post.title}</h3><p>{post.excerpt}</p></div>

@@ -5,7 +5,8 @@ import { Menu, MessageCircle, Moon, Sun, X } from 'lucide-react'
 const links = [
   { label: 'Home', href: '#/', route: 'home' },
   { label: 'About', href: '#/about', route: 'about' },
-  { label: 'Conversations', href: '#/conversations', route: 'conversations' }
+  { label: 'Conversations', href: '#/conversations', route: 'conversations' },
+  { label: 'Stories', href: '#/stories', route: 'stories' }
 ]
 
 export default function Header({ route, theme, onThemeChange }) {

@@ -17,11 +17,11 @@ export default function About() {
       <div className="about-pillar-grid">{pillars.map(([title, description, label]) => <article key={title}><div className="about-pillar-top"><Sparkles size={18} aria-hidden="true" /></div><div><small>{label}</small><h3>{title}</h3><p>{description}</p></div></article>)}</div>
     </section>
 
-    <section className="about-belief"><div className="about-belief-mark"><MessageCircle size={34} aria-hidden="true" /></div><div><span className="about-belief-label">Why WAVE exists</span><h2>Some conversations need more space.</h2><p>We create that space—so people can speak honestly, listen deeply and find meaning in perspectives beyond their own.</p></div></section>
+    <section className="about-belief"><div className="about-belief-mark"><MessageCircle size={34} aria-hidden="true" /></div><div><span className="about-belief-label">Why WAVE exists</span><h2>Some conversations need more space.</h2><p>WAVE exists to give young people a place to be heard, grow through learning, and create change through the power of their words.</p></div></section>
 
     <section className="about-values">
-      <div className="about-values-heading"><span className="about-values-label">How we show up</span><h2>Our values,<br /><em>in practice.</em></h2><p>The principles that shape how we listen, tell stories and build every conversation.</p></div>
-      <div className="about-values-list">{values.map(([title, description]) => <article key={title}><i aria-hidden="true" /><strong>{title}</strong><p>{description}</p></article>)}</div>
+      <div className="about-values-heading"><span className="about-values-label">How we show up</span><h2>Our values and how<br /><em>we practice them.</em></h2></div>
+      <div className="about-values-list">{values.map(([title, description, practice]) => <article key={title}><i aria-hidden="true" /><strong>{title}</strong><p>{description}</p><p className="about-value-practice"><b>In practice:</b> {practice}</p></article>)}</div>
     </section>
 
     <section className="about-cta"><div className="about-cta-copy"><span className="about-cta-label">Add your voice</span><h2>There is always more<br /><em>to the story.</em></h2><p>Your experience could be the perspective someone else needs.</p></div><a href="#/contribute"><span>Share your story</span><i><ArrowUpRight size={19} /></i></a></section>
