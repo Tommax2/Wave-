@@ -1,6 +1,7 @@
 import { starterPosts } from './posts'
 
-export const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:4000').replace(/\/$/, '')
+const DEFAULT_API_URL = import.meta.env.DEV ? 'http://localhost:4000' : 'https://wave-blog.onrender.com'
+export const API_URL = (import.meta.env.VITE_API_URL || DEFAULT_API_URL).replace(/\/$/, '')
 
 const asParagraphs = value => {
   if (Array.isArray(value)) return value.filter(Boolean)
