@@ -10,7 +10,7 @@ export default function Home({ stories = [] }) {
       <div className="hero-photo" aria-hidden="true"></div><div className="hero-shape" aria-hidden="true"></div>
       <div className="hero-inner page-shell">
         <div className="hero-copy">
-          <h1><span>Amplifying voices.</span><span>Sharing experiences.</span><span className="accent-line">Inspiring change.</span></h1>
+          <h1><span>Amplifying voices,</span><span>Sharing experiences,</span><span className="accent-line">Inspiring change.</span></h1>
           <p>A space for honest conversations about the experiences that shape our lives and communities.</p>
           <div className="actions"><a className="primary" href="#/conversations">Explore WAVE</a><a className="secondary" href="#/about">About us</a></div>
         </div>

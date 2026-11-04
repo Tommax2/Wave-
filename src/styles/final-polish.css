@@ -3,6 +3,7 @@
 .menu-button svg{display:block;stroke:currentColor!important;stroke-width:2.2}
 .site-header.is-solid .menu-button{background:#f8f5ff!important;color:#171023!important}
 .home-hero .hero-copy{transform:translateY(28px)}
+.home-hero .hero-copy:before{font-family:'Inter',var(--sans);font-size:11px;font-weight:800;line-height:1.4;letter-spacing:.18em;text-shadow:0 2px 12px rgba(0,0,0,.45)}
 .home-hero .hero-copy h1{font-size:clamp(58px,7vw,102px);line-height:1.02;letter-spacing:-.045em}
 .home-hero .hero-copy>p{font-size:18px}
 .home-hero .hero-copy h1 span{padding-bottom:.03em}
@@ -55,7 +56,7 @@
   .home-hero,.hero-inner{min-height:auto!important}
   .hero-inner{align-items:center!important;padding-top:112px;padding-bottom:38px;text-align:center!important}
   .hero-copy{align-items:center!important;text-align:center!important;transform:translateY(10px)}
-  .hero-copy:before{margin-inline:auto;text-align:center}
+  .hero-copy:before{margin-inline:auto;font-size:9px;font-weight:800;letter-spacing:.15em;text-align:center}
   .hero-copy h1{font-size:clamp(39px,10.8vw,50px);line-height:1.04}
   .hero-copy>p{max-width:420px;font-size:14px}
   .hero-note{justify-content:center!important;margin-top:30px!important;padding-top:0!important;text-align:center}
