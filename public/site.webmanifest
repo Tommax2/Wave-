@@ -1,0 +1,10 @@
+{
+  "name": "WAVE — Your Voice, Your Story, Your Space",
+  "short_name": "WAVE",
+  "description": "Honest stories, thoughtful perspectives and conversations that bring people closer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#11091b",
+  "theme_color": "#11091b",
+  "icons": [{ "src": "/assets/wave-favicon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }]
+}
